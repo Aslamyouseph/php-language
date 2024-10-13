@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Table Styles */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styles */
+button,
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.button-primary:hover {
+  background-color: #45a049;
+}
+
+.button-secondary {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.button-secondary:hover {
+  background-color: #e53935;
+}
+
+.button-update {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.button-update:hover {
+  background-color: #1e88e5;
+}
+
+.button-delete {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+.button-delete:hover {
+  background-color: #f4511e;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+table,
+button {
+  animation: fadeIn 1s ease-in-out;
+}

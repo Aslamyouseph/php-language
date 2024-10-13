@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="popup_login.css" />
+  </head>
+  <body>
+    <div class="login-popup">
+      <div class="box">
+        <div class="img-area">
+          <div class="img"></div>
+        </div>
+        <div class="form">
+          <div class="close">&times;</div>
+          <h1>Log In</h1>
+          <form action="popup_login.php" method="post">
+            <!-- actual file is in desktop folder , in here the photoe is not properly woeking -->
+            <div class="form-group">
+              <input
+                type="text"
+                name="email"
+                placeholder="Email"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label><input type="checkbox" />Remember Me</label>
+            </div>
+            <button type="submit" class="btn" value="submit">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="popup_login.js"></script>
+  </body>
+</html>
